@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 // import { images } from "../../constants";
 import "./Navbar.scss";
 import { BsLinkedin, BsInstagram, BsGithub } from "react-icons/bs";
-import { TbHeartCode } from "react-icons/tb";
+
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
