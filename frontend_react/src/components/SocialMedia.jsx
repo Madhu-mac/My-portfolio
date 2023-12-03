@@ -1,6 +1,5 @@
 import React from "react";
 import { BsLinkedin, BsInstagram, BsGithub } from "react-icons/bs";
-import { TbHeartCode } from "react-icons/tb";
 const SocialMedia = () => {
   return (
     <div className="app__social">
