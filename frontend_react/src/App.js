@@ -6,7 +6,7 @@ import {
   Skills,
   Work,
   Experiences,
-  Certifications,
+  // Certifications,
 } from "./container";
 import { Navbar } from "./components";
 import "./App.scss";
@@ -22,7 +22,7 @@ const App = () => {
         <Work />
         <Skills />
         <Experiences />
-        <Certifications />
+        {/* <Certifications /> */}
         <Footer />
         <div className="social__media">
           <SocialMedia />
