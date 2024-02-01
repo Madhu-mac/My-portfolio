@@ -44,7 +44,7 @@ const About = () => {
     <>
       <h2 className="head-text about__head">
         I believe in <span>The Power of Code</span> <br />
-        to transform <small>Ideas into Reality!</small>
+        to transform <small>Ideas into Reality.</small>
       </h2>
 
       <div className="app__profiles">
