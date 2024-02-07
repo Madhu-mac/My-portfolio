@@ -14,7 +14,7 @@
   width: 180px;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 220px;
+  height: 100%;
   margin: 2rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -22,7 +22,7 @@
   color: var(--white);
   cursor: pointer;
   transition: all 0.3s ease;
-  position: relative; /* Add this line to make it relative */
+  position: relative; 
 
   &:hover {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
@@ -77,6 +77,7 @@
   height: 150px;
   background-color: white;
   position: relative;
+  border-radius: 1rem;
 
   img {
     width: 100%;
@@ -93,19 +94,22 @@
 .app__cert-content {
   padding: 0.5rem;
   width: 100%;
+  
   position: relative;
   flex-direction: column;
   overflow: hidden; /* Add this line to hide overflowing content */
   text-overflow: ellipsis; /* Add this line to add ellipsis to long text */
-  white-space: nowrap; /* Add this line to prevent wrapping */
+  white-space: wrap; /* Add this line to prevent wrapping */
 
   h4 {
     font-size: 1rem;
     line-height: 1.2;
+    width: 100%;
     margin: 0;
+    text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: wrap;
   }
 
   .p-text {

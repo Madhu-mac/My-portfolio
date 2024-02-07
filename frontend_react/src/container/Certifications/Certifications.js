@@ -59,7 +59,7 @@ const Certifications = () => {
               className="app__cert-content app__flex"
               style={{ color: "white" }}
             >
-              <h4 className="bold-text">{certification.certificationName}</h4>
+              <h4 className="bold-text cert_heading">{certification.certificationName}</h4>
               <p className="p-text">{certification.issuingOrg}</p>
             </div>
           </div>
@@ -74,9 +74,3 @@ export default AppWrap(
   "certifications",
   "app__bg"
 );
-
-// export default AppWrap(
-//   MotionWrap(Work, 'app__works'),
-//   'work',
-//   'app__primarybg',
-// );
