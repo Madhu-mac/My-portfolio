@@ -23,7 +23,7 @@ const Certifications = () => {
         className="app__cert-portfolio"
       >
         {certifications.map((certification) => (
-          <div className="certifications__main">
+          <div className="certifications__main" key={certification.id}>
             <div className="app__cert-img app__flex">
               <img
                 src={urlFor(certification.imgUrl)}
@@ -65,23 +65,6 @@ const Certifications = () => {
           </div>
         ))}
       </motion.div>
-
-      {/* <div>
-        {certifications.map((certification) => (
-          <div>
-            <p>{certification.certificationName}</p>
-            <p>{certification.issuingOrg}</p>
-
-            <img
-              src={urlFor(certification.imgUrl)}
-              alt={certification.certificationName}
-            />
-            <a href={certification.credentialURL}>
-              {certification.credentialURL}
-            </a>
-          </div>
-        ))}
-      </div> */}
     </div>
   );
 };
@@ -91,6 +74,7 @@ export default AppWrap(
   "certifications",
   "app__bg"
 );
+
 // export default AppWrap(
 //   MotionWrap(Work, 'app__works'),
 //   'work',

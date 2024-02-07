@@ -11,15 +11,15 @@ import { motion } from "framer-motion";
 
 
 const Experiences = () => {
-  const [certifications, setCertifications] = useState([]);
+  // const [certifications, setCertifications] = useState([]);
 
-  useEffect(() => {
-    const query = '*[_type == "certifications"]';
-    client.fetch(query).then((data) => {
-      setCertifications(data);
-    });
-  }, []);
-  console.log(certifications, "Certifications Array");
+  // useEffect(() => {
+  //   const query = '*[_type == "certifications"]';
+  //   client.fetch(query).then((data) => {
+  //     setCertifications(data);
+  //   });
+  // }, []);
+  // console.log(certifications, "Certifications Array");
   // const [experiences, setExperiences] = useState([]);
 
   // useEffect(() => {
@@ -143,7 +143,7 @@ const Experiences = () => {
                     // key={work.name}
                   >
                     <h4 className="bold-text" style={{ color: "white" }}>
-                      Frontend Developer
+                      Full stack Developer
                     </h4>
                     <p
                       className="p-text"
@@ -180,69 +180,21 @@ const Experiences = () => {
                       initiatives.
                     </p>
                   </motion.div>
-                  {/* <Tooltip title={"Work Description"} className="p-text-desc">
-                    <button sx={{ m: 1 }}>{work.desc}</button>
-                  </Tooltip> */}
+                  
                 </>
                 {/* ))} */}
               </motion.div>
             </div>
-            <div className="experience education223">
+            <div className="experience">
               <div className="app__skills-exp-year">
-                {/* <p className="bold-text" style={{ color: "#483CC2" }}>
-                  2022 Jul - 2023 Mar
-                </p> */}
+                <p className="bold-text" style={{ color: "#483CC2" }}>
+                  2023 Aug - 2023 Dec
+                </p>
               </div>
-              <motion.div
-        transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="app__cert-portfolio"
-      >
-        {certifications.map((certification) => (
-          <div className="certifications__main">
-            <div className="app__cert-img app__flex">
-              <img
-                src={urlFor(certification.imgUrl)}
-                alt={certification.certificationName}
-              />
-              <motion.div
-                whileHover={{ opacity: [0, 1] }}
-                transition={{
-                  duration: 0.25,
-                  ease: "easeInOut",
-                  staggerChildren: 0.5,
-                }}
-                className="app__cert-hover app__flex"
-              >
-                <a
-                  href={certification.credentialURL}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
-                    transition={{ duration: 0.25 }}
-                    className="app__flex"
-                  >
-                    <AiFillEye />
-                  </motion.div>
-                </a>
-              </motion.div>
-            </div>
-
-            <div
-              className="app__cert-content app__flex"
-              style={{ color: "white" }}
-            >
-              <h4 className="bold-text">{certification.certificationName}</h4>
-              <p className="p-text">{certification.issuingOrg}</p>
-            </div>
-          </div>
-        ))}
-      </motion.div>
+              <motion.div className="app__skills-exp-works">
                 {/* {experience.works.map((work) => ( */}
                 <>
-                  {/* <motion.div
+                  <motion.div
                     whileInView={{ opacity: [0, 1] }}
                     transition={{ duration: 0.5 }}
                     className="app__skills-exp-work"
@@ -251,7 +203,7 @@ const Experiences = () => {
                     // key={work.name}
                   >
                     <h4 className="bold-text" style={{ color: "white" }}>
-                      Trainee Software Engineer
+                      MERN stack Developer
                     </h4>
                     <p
                       className="p-text"
@@ -261,37 +213,34 @@ const Experiences = () => {
                         fontWeight: "bold",
                       }}
                     >
-                      Preludesys Ind Ltd
+                      Techsophy
                     </p>
                     <p className="p-text-desc" style={{ color: "#cbcbcb" }}>
-                      ● Worked on a real-time project for 7 months as a
-                      Fullstack Support Developer for a US-based project named
-                      Recovery Assist Platform.
+                      ●  Worked on a real-time project for 4 months as a Fullstack Developer Intern and helped the to team build various
+                        components, added new features, Fixing UI issues, and maintained databases workflow.
                     </p>
                     <p
                       className="p-text-desc para-none"
                       style={{ color: "#cbcbcb" }}
                     >
-                      ● Leveraged mastery of React JS, CSS, and JavaScript to
-                      build top-quality code for diverse projects.
+                      ● Implemented cutting-edge technologies including React JS, Tailwind CSS, and JavaScript to build top-quality code,
+ resulting in a 30% increase in website performance and a 20% reduction in customer support issues for diverse projects
                     </p>
                     <p
                       className="p-text-desc para-none"
                       style={{ color: "#cbcbcb" }}
                     >
-                      ● Got trained in Dynamics 365 Business Central and CRM as
-                      a Technical Developer Consultant.
+                      ● Proactively contributed to solving real-time project complexities, ensuring a seamless and enhanced user experience.
                     </p>
-                  </motion.div> */}
-                  {/* <Tooltip title={"Work Description"} className="p-text-desc">
-                    <button sx={{ m: 1 }}>{work.desc}</button>
-                  </Tooltip> */}
+                  </motion.div>
+                  
                 </>
                 {/* ))} */}
+              </motion.div>
             </div>
           </>
         </motion.div>
-        {/* ))} */}
+      
       </div>
     </>
   );
