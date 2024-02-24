@@ -33,7 +33,7 @@ const Header = () => (
         <span className="text-blue-500"> Madhu</span>
       </h2>
       <h2 className="text-6xl font-bold text-white">Lokesh</h2>
-      <div style={{ display: "flex"}} className="mt-4 text-2xl font-light text-gray-500">And I am a &nbsp;<h1><span class="text_1 text-blue-500"> <i>Full stack Web developer</i></span>
+      <div style={{ display: "flex", flexWrap: "wrap"}} className="mt-4 text-2xl font-light text-gray-500">And I am a &nbsp;<h1><span class="text_1 text-blue-500"> <i>Full stack Web developer</i></span>
       <span class="text_2 text-blue-500"> <i>Mobile App Developer</i></span></h1></div>
     </div>
           
