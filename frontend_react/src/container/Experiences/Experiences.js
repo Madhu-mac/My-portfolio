@@ -81,7 +81,7 @@ const Experiences = () => {
           </>
         </motion.div>
       </div>
-      <div className="app__skills-exp expp">
+      <div className="app__skills-exp expp" style={{ width: "100%"}}>
         <motion.div
           className="app__skills-exp-item"
           style={{
@@ -149,7 +149,7 @@ const Experiences = () => {
             <div className="experience">
               <div className="app__skills-exp-year">
                 <p className="bold-text" style={{ color: "#483CC2" }}>
-                  2023 Aug - 2023 Dec
+                  2023 Aug - 2024 Jan
                 </p>
               </div>
               <motion.div className="app__skills-exp-works">
@@ -196,6 +196,54 @@ const Experiences = () => {
                       ● Proactively contributed to solving real-time project
                       complexities, ensuring a seamless and enhanced user
                       experience.
+                    </p>
+                  </motion.div>
+                </>
+              </motion.div>
+            </div>
+            
+      <div className="experience" >
+              <div className="app__skills-exp-year">
+                <p className="bold-text" style={{ color: "#483CC2" }}>
+                  2024 Feb - present 
+                </p>
+              </div>
+              <motion.div className="app__skills-exp-works">
+                <>
+                  <motion.div
+                    whileInView={{ opacity: [0, 1] }}
+                    transition={{ duration: 0.5 }}
+                    className="app__skills-exp-work"
+                    data-tip
+                  >
+                    <h4 className="bold-text" style={{ color: "white" }}>
+                      Full stack Developer
+                    </h4>
+                    <p
+                      className="p-text"
+                      style={{
+                        color: "#4f9ed7",
+                        fontStyle: "italic",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      Drooid
+                    </p>
+                    <p className="p-text-desc" style={{ color: "#cbcbcb" }}>
+                      ●  Founding member of Drooid, a cutting-edge news app featuring AI-generated content and social media integration.
+                    </p>
+                    <p
+                      className="p-text-desc para-none"
+                      style={{ color: "#cbcbcb" }}
+                    >
+                      ● Specializing in React Native for intuitive frontend experiences. Implemented SQL and Sequelize for optimized backend
+ databases, reducing query response time by 25% and enhancing efficiency by 30%.
+                    </p>
+                    <p
+                      className="p-text-desc para-none"
+                      style={{ color: "#cbcbcb" }}
+                    >
+                      ● Played a key role in backend development using Node.js, integrating advanced logic to enhance app functionality.
                     </p>
                   </motion.div>
                 </>

@@ -5,6 +5,7 @@ import { AppWrap } from "../../wrapper";
 import { images } from "../../constants";
 import "./Header.scss";
 import { BiDownload } from "react-icons/bi";
+import { ImProfile } from "react-icons/im";
 
 const scaleVariants = {
   whileInView: {
@@ -24,26 +25,38 @@ const Header = () => (
       transition={{ duration: 0.5 }}
       className="app__header-info"
     >
-      <div className="app__header-badge">
-        <div className="badge-cmp app__flex">
-          <span>👋</span>
-          <div style={{ marginLeft: 20 }}>
-            <p className="p-text color-white">Hello, I am</p>
-            <h1 className="head-text color-white">Madhu Lokesh</h1>
-          </div>
-        </div>
-
-        <div className="tag-cmp app__flex">
-          <p className="p-text color-white">Full Stack Developer</p>
-          <p className="p-text color-white">MERN Stack Developer</p>
-        </div>
-        <a href={images.resume} download style={{textDecoration:"none"}}>
-          <button className="resume-button">
-              <BiDownload fontSize={20} />
-            &nbsp;&nbsp;Download Resume
+      
+      <div style={{ marginTop: "80px"}} className="flex flex-col items-start justify-center p-8 bg-transparent">
+      <h1 className="text-2xl font-semibold text-white">Hi There,</h1>
+      <h2 className="text-6xl font-bold text-white">
+        I am 
+        <span className="text-blue-500"> Madhu</span>
+      </h2>
+      <h2 className="text-6xl font-bold text-white">Lokesh</h2>
+      <div style={{ display: "flex"}} className="mt-4 text-2xl font-light text-gray-500">And I am a &nbsp;<h1><span class="text_1 text-blue-500"> <i>Full stack Web developer</i></span>
+      <span class="text_2 text-blue-500"> <i>Mobile App Developer</i></span></h1></div>
+    </div>
+          
+        <motion.div
+      whileInView={{ y: [100, 0], opacity: [0, 1] }}
+      transition={{ duration: 0.5 }}
+      className="app__header-info"
+    >
+        <div style={{ display: "flex", marginTop: "-20%"}}>
+        <a href="https://drive.google.com/file/d/19jSVRQZPXkWzDypXws2iEfJh4nCo0tfo/view?usp=sharing" download target="blank" style={{textDecoration:"none"}}>
+          <button className="resume-button" style={{ width: "130px"}}>
+          <ImProfile fontSize={20} style={{marginRight:"5px"}}/>
+          Resume
           </button>
         </a>
-      </div>
+        <a href={images.resume} download style={{textDecoration:"none", marginLeft: "-20px"}}>
+          <button className="resume-button" style={{ width: "90px"}}>
+              <BiDownload fontSize={25} />
+          </button>
+        </a>
+        </div>
+        </motion.div>
+        
     </motion.div>
 
     {/* <motion.div
