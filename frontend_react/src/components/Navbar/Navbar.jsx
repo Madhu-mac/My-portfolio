@@ -11,6 +11,7 @@ const Navbar = () => {
             "about",
             "work",
             "skills",
+            'education',
             "experience",
             "certifications",
           ].map((item) => (
@@ -59,6 +60,7 @@ const Navbar = () => {
               "about",
               "work",
               "skills",
+              'education',
               "experience",
               "certifications",
               "contact",

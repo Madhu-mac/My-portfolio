@@ -43,7 +43,7 @@ const Header = () => (
       className="app__header-info"
     >
         <div style={{ display: "flex", marginTop: "-20%"}}>
-        <a href="https://drive.google.com/file/d/19jSVRQZPXkWzDypXws2iEfJh4nCo0tfo/view?usp=sharing" download target="blank" style={{textDecoration:"none"}}>
+        <a href="https://drive.google.com/file/d/1qS-4gd1RDB_kG3ta6EM6oCZ81LOlFOyV/view?usp=sharing" download target="blank" style={{textDecoration:"none"}}>
           <button className="resume-button" style={{ width: "130px"}}>
           <ImProfile fontSize={20} style={{marginRight:"5px"}}/>
           Resume

@@ -1,0 +1,57 @@
+.app__skills-exp {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (max-width: 900px) {
+    margin-top: 2rem;
+  }
+}
+.custom-timeline::before {
+  background-color: var(--background) !important;
+}
+@media screen and (min-width: 1360px) {
+  .custom-timeline .vertical-timeline-element-content {
+    width: 80% !important;
+    max-width: none !important;
+  }
+  
+  .custom-timeline .vertical-timeline-element--left .vertical-timeline-element-content {
+    margin-left: -40%;
+  }
+  
+  .custom-timeline .vertical-timeline-element--right .vertical-timeline-element-content {
+    margin-right: -40%;
+  }
+}
+.app__skills-exp-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem 0;
+}
+
+.dateClass {
+  margin-right: 20px;
+  color: white;
+  font-size: large;
+}
+
+.dateClass2 {
+  margin-left: 20px;
+  color: white;
+  font-size: large;
+}
+
+.custom-timeline .vertical-timeline-element--left .vertical-timeline-element-content {
+  margin-bottom: -10%;
+  border-radius: 20px;
+}
+
+.custom-timeline .vertical-timeline-element--right .vertical-timeline-element-content {
+  margin-bottom: -10%;
+  border-radius: 20px;
+}

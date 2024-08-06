@@ -6,6 +6,7 @@ import {
   Skills,
   Work,
   Experiences,
+  Education,
   Certifications,
 } from "./container";
 import { SocialMedia } from "./components";
@@ -45,6 +46,7 @@ const App = () => {
         <About />
         <Work />
         <Skills />
+        <Education/>
         <Experiences />
         <Certifications />
         <Footer />
